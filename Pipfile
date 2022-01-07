@@ -7,10 +7,9 @@ name = "pypi"
 Flask = "*"
 Flask-FlatPages = "*"
 Frozen-Flask = "*"
-
+flask-markdown = "*"
 
 [dev-packages]
-
 
 [requires]
 python_version = "3.8"

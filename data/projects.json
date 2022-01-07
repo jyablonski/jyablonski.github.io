@@ -1,0 +1,34 @@
+{
+    "personal": [
+      {
+        "description": "R Shiny Dashboard for NBA ELT Pipeline",
+        "image": "nba.png",
+        "link": "https://github.com/jyablonski/NBA-Dashboard",
+        "title": "NBA R Shiny Dashboard"
+      },
+      {
+        "description": "Web Scrape Script for NBA ELT Pipeline",
+        "image": "python.png",
+        "link": "https://github.com/jyablonski/python_docker",
+        "title": "Python Web Scrape"
+      },
+      {
+        "description": "dbt Models for NBA ELT Pipeline",
+        "image": "dbt.png",
+        "link": "https://github.com/jyablonski/nba_elt_dbt",
+        "title": "dbt Transformations"
+      },
+      {
+        "description": "Code for AWS Infrastructure for NBA ELT Pipeline",
+        "image": "terraform.png",
+        "link": "https://github.com/jyablonski/aws_terraform",
+        "title": "Terraform - AWS"
+      },
+      {
+        "description": "Airflow Proof of Concept for NBA ELT Pipeline Orchestration",
+        "image": "airflow.png",
+        "link": "https://github.com/jyablonski/nba_elt_airflow",
+        "title": "Airflow"
+      }
+    ]
+  }

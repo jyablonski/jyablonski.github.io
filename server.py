@@ -16,6 +16,7 @@ FLATPAGES_EXTENSION = '.md'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.config['FREEZER_DESTINATION']='docs'
 pages = FlatPages(app)
 freezer = Freezer(app) # Creates a frozen object of the flask app
 markdown_manager = Markdown(app, extensions=['fenced_code'], output_format='html5',)

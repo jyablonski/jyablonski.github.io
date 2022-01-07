@@ -43,16 +43,18 @@ def about():
 def resume():
     return render_template('resume.html', pages=pages)
 
+# URL Routing - Flat Pages
+# Retrieves the page path and
+# @app.route('/<path:path>/')
+# def page(path):
+#     page = pages.get_or_404(path)
+#     return render_template("page.html", page=page)
+
 @app.errorhandler(404)
 def page_not_found(path):
     # note that we set the 404 status explicitly
     return render_template('404.html'), 404
 
-# URL Routing - Flat Pages
-# Retrieves the page path and
-@app.route('/<path:path>/')
-def page(path):
-    return render_template('page.html', page=pages.get_or_404(path))
 
 # Main Function, Runs at http://0.0.0.0:8000
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 build-venv:
 	pipenv install
 
+# do this first before serve or build
 .PHONY: venv
 venv:
 	pipenv shell

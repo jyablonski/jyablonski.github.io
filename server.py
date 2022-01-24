@@ -30,6 +30,10 @@ review_tags = set([tag for page in list(reviews) for tag in page.meta['tags']])
 def index():
     return render_template('index.html')
 
+@app.route('/posts/')
+def posts():
+    return render_template('posts.html', pages = pages)
+
 @app.route('/projects/')
 def projects():
     with open('data/projects.json') as projects_json:
@@ -46,10 +50,10 @@ def resume():
 
 # URL Routing - Flat Pages
 # Retrieves the page path and
-# @app.route('/<path:path>/')
-# def page(path):
-#     page = pages.get_or_404(path)
-#     return render_template("page.html", page=page)
+@app.route('/<path:path>/')
+def page(path):
+    page = pages.get_or_404(path)
+    return render_template("page.html", page=page)
 
 @app.errorhandler(404)
 def page_not_found(path):

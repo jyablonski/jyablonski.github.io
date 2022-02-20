@@ -8,7 +8,7 @@
 <div class="card-row">
   {% for project in projects.personal %}
   {% if loop.index % 3 == 1 %} <div> {% endif %}
-    <div class="card-course card-course-1">
+    <div class="project project-1">
       <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
       <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title }}</strong></a></p>
       <p class="light-text">{{ project.description }}</p>

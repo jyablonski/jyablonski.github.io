@@ -52,11 +52,37 @@
         <br>
         <main id="body-fade">
             
-<h3 class="post-title"><b>Resume</b></h3>
-<body>
-  <iframe src="/static/pictures/resume/jyablonski_resume.pdf#page=1" width="100%" height="1000px" type="application/pdf" frameBorder="0" scrolling="auto">
-  </iframe>
-</body>
+    <h2>MLflow Notes</h2>
+    <h3>ML FLOW</h3>
+<h1>Basics</h1>
+<p>run <code>src/main.py</code> to run the model</p>
+<p>run <code>mlflow ui</code> and go to <code>http://localhost:5000/#/</code> to view historical runs.  it's just a flask server.</p>
+<p><code>mlflow run sklearn_elasticnet_wine -P alpha=0.5</code>
+<code>mlflow run https://github.com/mlflow/mlflow-example.git -P alpha=5.0</code></p>
+<p>have the tonights ml game have the odds data and have it look exactly like it does in prod, and then in 
+shiny make a selector to either select 1) tonight's games, or 2) the full remaining schedule.</p>
+<h3>this was for the ec2 server to add nginx</h3>
+<p>sudo yum install python3.7
+sudo yum install httpd-tools
+sudo amazon-linux-extras install epel
+sudo yum install nginx
+sudo pip3 install mlflow</p>
+<p>sudo htpasswd -c /etc/nginx/.htpasswd testuser
+- password b<em>gg</em>*</p>
+<p>ADD 
+    location / {
+        proxy_pass http://localhost:5000/;
+        auth_basic_user_file /etc/nginx/.htpasswd;
+    }</p>
+<p>in the server { } block</p>
+<p>tracking_uri = "User provides the DNS of the Configured EC2 instance in the step above"</p>
+<h1>Sample tracking_uri = http://testuser:test@PUBLIC_DNS_OF_YOUR_EC2</h1>
+<h1>Set the Tracking URI</h1>
+<p>mlflow.set_tracking_uri(tracking_uri)
+client = mlflow.tracking.MlflowClient(tracking_uri=tracking_uri)</p>
+<p>mlflow server --default-artifact-root s3://jacobsbucket97/practice/ --host 0.0.0.0</p>
+<p>mlflow server --backend-store-uri sqlite:///mflow.db --default-artifact-root s3://jyablonski-mlflow-bucket/ --host 0.0.0.0</p>
+<p>mlflow server --backend-store-uri sqlite:///mflow.db --default-artifact-root s3://jyablonski-mlflow-bucket/ --serve-artifacts --host 0.0.0.0</p>
 
         </main>
     </div>

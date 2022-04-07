@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h3 class="post-title"><b>Projects</b></h3>
-<p>
-  Below are a list of related components which power my NBA ELT Pipeline Project.
-</p>
+<h2 class="post-title"><b>Projects</b></h2>
+<h4> NBA ELT Pipeline </h1>
 <div class="card-row">
   {% for project in projects.personal %}
   {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -19,7 +17,21 @@
   {% endif %}
   {% endfor %}
 </div>
-
+<h4> Twitch Streaming </h1>
+<div class="card-row">
+  {% for project in projects.twitch_kafka %}
+  {% if loop.index % 3 == 1 %} <div> {% endif %}
+    <div class="project project-1">
+      <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+      <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title }}</strong></a></p>
+      <p class="light-text">{{ project.description }}</p>
+    </div>
+  {% if (loop.index % 3 == 0) or
+    (loop.index == projects.twitch_kafka|length) %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
 
 
 {% endblock content %}

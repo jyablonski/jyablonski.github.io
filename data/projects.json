@@ -29,6 +29,26 @@
         "image": "airflow.png",
         "link": "https://github.com/jyablonski/nba_elt_airflow",
         "title": "Airflow"
+      },
+      {
+        "description": "ML Pipeline w/ scikit-learn & MLflow",
+        "image": "mlflow.png",
+        "link": "https://github.com/jyablonski/nba_elt_mlflow",
+        "title": "MLflow"
+      }
+    ],
+    "twitch_kafka": [
+      {
+        "description": "docker-compose Kafka w/ Zookeeper",
+        "image": "kafka.png",
+        "link": "https://github.com/jyablonski/kafka_twitch",
+        "title": "Kafka"
+      },
+      {
+        "description": "Python Script to Scrape Twitch Helix API",
+        "image": "python.png",
+        "link": "https://github.com/jyablonski/kafka_twitch",
+        "title": "API Scrape"
       }
     ]
-  }
+}

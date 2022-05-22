@@ -1,54 +1,60 @@
 {
     "personal": [
       {
-        "description": "Web Dashboard for NBA ELT Pipeline",
+        "description": "Web Dashboard",
         "image": "r.png",
         "link": "https://github.com/jyablonski/NBA-Dashboard",
         "title": "R Shiny"
       },
       {
-        "description": "Python Script for NBA ELT Pipeline",
+        "description": "Web Scrape Script",
         "image": "python.png",
         "link": "https://github.com/jyablonski/python_docker",
-        "title": "Web Scrape"
+        "title": "Python"
       },
       {
-        "description": "dbt Models for NBA ELT Pipeline",
+        "description": "SQL Transformations",
         "image": "dbt.png",
         "link": "https://github.com/jyablonski/nba_elt_dbt",
-        "title": "SQL Transformations"
+        "title": "dbt"
       },
       {
-        "description": "Code for AWS Infrastructure for NBA ELT Pipeline",
+        "description": "AWS Infrastructure",
         "image": "terraform.png",
         "link": "https://github.com/jyablonski/aws_terraform",
         "title": "Terraform"
       },
       {
-        "description": "Proof of Concept for NBA ELT Pipeline Orchestration",
+        "description": "Workflow Orchestration",
         "image": "airflow.png",
         "link": "https://github.com/jyablonski/nba_elt_airflow",
         "title": "Airflow"
       },
       {
-        "description": "ML Pipeline w/ scikit-learn & MLflow",
+        "description": "Workflow w/ scikit-learn & MLflow",
         "image": "mlflow.png",
         "link": "https://github.com/jyablonski/nba_elt_mlflow",
-        "title": "MLflow"
+        "title": "ML Pipeline"
       }
     ],
     "twitch_kafka": [
       {
-        "description": "docker-compose Kafka w/ Zookeeper",
-        "image": "kafka.png",
-        "link": "https://github.com/jyablonski/kafka_twitch",
-        "title": "Kafka"
-      },
-      {
-        "description": "Python Script to Scrape Twitch Helix API",
+        "description": "Twitch Helix API Scrape",
         "image": "python.png",
         "link": "https://github.com/jyablonski/kafka_twitch",
-        "title": "API Scrape"
+        "title": "Python"
+      },
+      {
+        "description": "Cloud Execution",
+        "image": "fargate.png",
+        "link": "https://github.com/jyablonski/kafka_twitch",
+        "title": "ECS Fargate"
+      },
+      {
+        "description": "BI Dashboard Layer hosted on Heroku",
+        "image": "metabase.png",
+        "link": "https://github.com/jyablonski/kafka_twitch",
+        "title": "Metabase"
       }
     ]
 }

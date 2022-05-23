@@ -62,5 +62,13 @@
         "link": "https://github.com/jyablonski/kafka_twitch",
         "title": "Kafka"
       }
+    ],
+    "graphql": [
+      {
+        "description": "Exposing NBA ELT Pipeline Data via Web API",
+        "image": "graphql.png",
+        "link": "https://github.com/jyablonski/graphql_praq",
+        "title": "GraphQL"
+      }
     ]
 }

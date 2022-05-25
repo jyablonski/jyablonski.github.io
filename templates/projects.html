@@ -2,7 +2,7 @@
 
 {% block content %}
 <h2 class="post-title"><b>Projects</b></h2>
-<h4> NBA ELT Pipeline </h1>
+<h4> <a href="https://jyablonski.shinyapps.io/nbadashboard/">NBA ELT Pipeline</a> </h1>
 <div class="card-row">
   {% for project in projects.personal %}
   {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -32,7 +32,7 @@
   {% endif %}
   {% endfor %}
 </div>
-<h4> GraphQL </h1>
+<h4> <a href="https://jyablonski_graphql.deta.dev/graphql">GraphQL API</a> </h1>
   <div class="card-row">
     {% for project in projects.graphql %}
     {% if loop.index % 3 == 1 %} <div> {% endif %}

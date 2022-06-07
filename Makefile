@@ -18,17 +18,20 @@ build:
 .PHONY: bump-patch
 bump-patch:
 	@bump2version patch
+	@python server.py build
 	@git push --tags
 	@git push
 
 .PHONY: bump-minor
 bump-minor:
 	@bump2version minor
+	@python server.py build
 	@git push --tags
 	@git push
 
 .PHONY: bump-major
 bump-major:
 	@bump2version major
+	@python server.py build
 	@git push --tags
 	@git push

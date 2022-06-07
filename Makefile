@@ -19,6 +19,8 @@ build:
 bump-patch:
 	@bump2version patch
 	@python server.py build
+	@git add .
+	@git commit -m "updating package"
 	@git push --tags
 	@git push
 
@@ -26,6 +28,8 @@ bump-patch:
 bump-minor:
 	@bump2version minor
 	@python server.py build
+	@git add .
+	@git commit -m "updating package"
 	@git push --tags
 	@git push
 
@@ -33,5 +37,7 @@ bump-minor:
 bump-major:
 	@bump2version major
 	@python server.py build
+	@git add .
+	@git commit -m "updating package"
 	@git push --tags
 	@git push

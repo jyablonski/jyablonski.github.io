@@ -43,9 +43,9 @@ def projects():
         return render_template("projects.html", projects=projects_data)
 
 
-@app.route("/about/")
-def about():
-    return render_template("about.html", pages=pages)
+# @app.route("/about/")
+# def about():
+#     return render_template("about.html", pages=pages)
 
 
 @app.route("/resume/")

@@ -1,20 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Home</h2>
-    <ul>
-    {% for page in pages %}
-        <li>
-            <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
-        </li>
-    {% else %}
-        <li> <b>Welcome to my Website !</b>
-            
-            <br>
-            <br>
-        Please checkout some of my tabs for my work
-        
-        </li>
-    {% endfor %}
-    </ul>
+<h3 class="post-title"><b>Home</b></h3>
+<h5 class="post-title">Hi, I'm Jacob!</h5>
+
+<img src="/static/pictures/personal_pic.png" width="228" height="228" alt="Personal Pic">
+
+<p>
+  I'm a Data Analyst with 1+ yrs professional experience.  My main tech stack includes Python, dbt, Airflow, Docker, AWS Cloud, Terraform, and GitHub Actions. 
+  <br>
+  <br>
+  I specialize in building data pipelines, performing ELT data modeling for downstream analytics in BI tools, and incorporating software engineering best
+  practices such as unit testing, data quality & validation testing, and CI CD to make my data solutions as stable and secure as possible.
+  <br>
+  <br>
+  I pride myself on my committment to personal improvement and my ability to learn.  I'm actively expanding my skill set, working on personal projects, and
+  exploring everything this domain has to offer while I continue working towards an Analytics Engineer or Data Engineer position.
+  <br>
+  <br>
+  Feel free to checkout the tabs for some of my relevant work, or the social links at the bottom of the website 👍
+  <br>
+  <br>
+  <br>
+  <br>
+  This website is hosted on GitHub Pages and built with <a href="https://github.com/Frozen-Flask/Frozen-Flask">Frozen Flask</a>.
+  <br>
+  <br>
+  Version: 0.0.4
+</p>
 {% endblock content %}

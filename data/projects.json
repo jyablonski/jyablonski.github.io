@@ -45,12 +45,6 @@
         "title": "Python"
       },
       {
-        "description": "Cloud Execution",
-        "image": "fargate.png",
-        "link": "https://github.com/jyablonski/twitch_scraper",
-        "title": "ECS Fargate"
-      },
-      {
         "description": "BI Dashboard Layer hosted on Heroku",
         "image": "metabase.png",
         "link": "https://github.com/jyablonski/twitch_scraper",
@@ -61,6 +55,12 @@
         "image": "kafka.png",
         "link": "https://github.com/jyablonski/kafka_twitch",
         "title": "Kafka"
+      },
+      {
+        "description": "AWS Infrastructure",
+        "image": "terraform.png",
+        "link": "https://github.com/jyablonski/aws_terraform/blob/master/twitch.tf",
+        "title": "Terraform"
       }
     ],
     "graphql": [
@@ -69,6 +69,12 @@
         "image": "graphql.png",
         "link": "https://github.com/jyablonski/graphql_praq",
         "title": "GraphQL"
+      },
+      {
+        "description": "AWS Infrastructure",
+        "image": "terraform.png",
+        "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
+        "title": "Terraform"
       }
     ]
 }

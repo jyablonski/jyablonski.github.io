@@ -25,16 +25,22 @@
         "title": "Terraform"
       },
       {
-        "description": "Workflow Orchestration",
-        "image": "airflow.png",
-        "link": "https://github.com/jyablonski/nba_elt_airflow",
-        "title": "Airflow"
-      },
-      {
         "description": "Workflow w/ scikit-learn & MLflow",
         "image": "mlflow.png",
         "link": "https://github.com/jyablonski/nba_elt_mlflow",
         "title": "ML Pipeline"
+      },
+      {
+        "description": "Production Orchestration",
+        "image": "stepfunctions.svg",
+        "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
+        "title": "Step Functions"
+      },
+      {
+        "description": "Orchestration Proof of Concept",
+        "image": "airflow.png",
+        "link": "https://github.com/jyablonski/nba_elt_airflow",
+        "title": "Airflow"
       }
     ],
     "twitch_kafka": [

@@ -47,6 +47,21 @@
     {% endif %}
     {% endfor %}
   </div>
+  <h4> Personal Website </h1>
+    <div class="card-row">
+      {% for project in projects.website %}
+      {% if loop.index % 3 == 1 %} <div> {% endif %}
+        <div class="project project-1">
+          <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+          <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title }}</strong></a></p>
+          <p class="light-text">{{ project.description }}</p>
+        </div>
+      {% if (loop.index % 3 == 0) or
+        (loop.index == projects.website|length) %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
 
 
 {% endblock content %}

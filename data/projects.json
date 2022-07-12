@@ -82,5 +82,25 @@
         "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
         "title": "Terraform"
       }
+    ],
+    "website": [
+      {
+        "description": "Frozen Flask to Build Static Website",
+        "image": "flask.png",
+        "link": "https://github.com/jyablonski/jyablonski.github.io",
+        "title": "Server Code"
+      },
+      {
+        "description": "AWS Infrastructure",
+        "image": "terraform.png",
+        "link": "https://github.com/jyablonski/aws_terraform/blob/master/website.tf",
+        "title": "Terraform"
+      },
+      {
+        "description": "CI CD Pipeline to Push Files to S3",
+        "image": "github_actions.png",
+        "link": "https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml",
+        "title": "GitHub Actions"
+      }
     ]
 }

@@ -3,6 +3,8 @@
 {% block content %}
 <h2 class="post-title"><b>Projects</b></h2>
 <h4> <a href="https://jyablonski.shinyapps.io/nbadashboard/">NBA ELT Pipeline</a> </h1>
+  <p>An NBA Project with an ELT Pipeline which sources & transforms data from various feeds and transforms it into SQL Models
+     which feed into the R Shiny <br> Web Dashboard</p>
 <div class="card-row">
   {% for project in projects.personal %}
   {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -18,6 +20,8 @@
   {% endfor %}
 </div>
 <h4> Twitch.tv Streaming </h1>
+  <p>A Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to a Kafka Topic, and then stores it into SQL in 60s microbatches 
+    <br>to enable a BI Layer to be served in Metabase</p>
 <div class="card-row">
   {% for project in projects.twitch_kafka %}
   {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -33,6 +37,7 @@
   {% endfor %}
 </div>
 <h4> <a href="https://jyablonski_graphql.deta.dev/graphql">GraphQL API</a> </h1>
+  <p>A Public GraphQL API that exposes Production Data created from the NBA ELT Pipeline</p>
   <div class="card-row">
     {% for project in projects.graphql %}
     {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -48,6 +53,7 @@
     {% endfor %}
   </div>
   <h4> Personal Website </h1>
+    <p>A static Flask Project that's hosted in S3 and served on AWS Cloudfront</p>
     <div class="card-row">
       {% for project in projects.website %}
       {% if loop.index % 3 == 1 %} <div> {% endif %}

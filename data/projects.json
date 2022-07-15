@@ -45,22 +45,16 @@
     ],
     "twitch_kafka": [
       {
-        "description": "Twitch Helix API Scrape",
-        "image": "python.png",
-        "link": "https://github.com/jyablonski/twitch_scraper",
-        "title": "Python"
+        "description": "Docker-Compose Setup",
+        "image": "kafka.png",
+        "link": "https://github.com/jyablonski/kafka_twitch",
+        "title": "Kafka"
       },
       {
         "description": "BI Dashboard Layer hosted on Heroku",
         "image": "metabase.png",
         "link": "https://github.com/jyablonski/twitch_scraper",
         "title": "Metabase"
-      },
-      {
-        "description": "Docker-Compose Setup to continuously ingest Twitch data w/ Kafka",
-        "image": "kafka.png",
-        "link": "https://github.com/jyablonski/kafka_twitch",
-        "title": "Kafka"
       },
       {
         "description": "AWS Infrastructure",

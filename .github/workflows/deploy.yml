@@ -1,6 +1,8 @@
 name: Jacob's Website Deployment
 
 on:
+  repository_dispatch:
+    types: [build]
   push:
     branches:
     - master

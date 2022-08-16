@@ -37,7 +37,7 @@
   {% endfor %}
 </div>
 <h4> <a href="https://jyablonski_graphql.deta.dev/graphql">GraphQL API</a> </h1>
-  <p>A Public GraphQL API that exposes Production Data created from the NBA ELT Pipeline</p>
+  <p>A Public GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project</p>
   <div class="card-row">
     {% for project in projects.graphql %}
     {% if loop.index % 3 == 1 %} <div> {% endif %}
@@ -68,6 +68,21 @@
       {% endif %}
       {% endfor %}
     </div>
-
+    <h4> REST API </h1>
+      <p>A Public REST API Project that exposes Production Data created from the NBA ELT Pipeline Project</p>
+      <div class="card-row">
+        {% for project in projects.rest_api %}
+        {% if loop.index % 3 == 1 %} <div> {% endif %}
+          <div class="project project-1">
+            <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+            <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title }}</strong></a></p>
+            <p class="light-text">{{ project.description }}</p>
+          </div>
+        {% if (loop.index % 3 == 0) or
+          (loop.index == projects.website|length) %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
 
 {% endblock content %}

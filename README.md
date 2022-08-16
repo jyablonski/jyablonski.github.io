@@ -2,4 +2,4 @@
 
 Flask Website
 
-Version: 0.2.7
+Version: 0.3.0

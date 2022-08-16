@@ -65,7 +65,7 @@
     ],
     "graphql": [
       {
-        "description": "Exposing NBA ELT Pipeline Data via Web API",
+        "description": "API Code",
         "image": "graphql.png",
         "link": "https://github.com/jyablonski/graphql_praq",
         "title": "GraphQL"
@@ -74,6 +74,20 @@
         "description": "AWS Infrastructure",
         "image": "terraform.png",
         "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
+        "title": "Terraform"
+      }
+    ],
+    "rest_api": [
+      {
+        "description": "API Code",
+        "image": "api.png",
+        "link": "https://github.com/jyablonski/nba_elt_rest_api",
+        "title": "REST API"
+      },
+      {
+        "description": "AWS Infrastructure",
+        "image": "terraform.png",
+        "link": "https://github.com/jyablonski/aws_terraform/blob/master/rest_api.tf",
         "title": "Terraform"
       }
     ],

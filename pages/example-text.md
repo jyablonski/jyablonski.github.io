@@ -1,6 +1,7 @@
 title: My First Entry
 date: 2022-01-04
 description: Walthrough Text 1
+tags: ["test", "Chicago", "zoos"]
 
 xxx
 

@@ -8,10 +8,15 @@
       <a style="color:#c8d1d9;font-size:large;" href="{{ url_for("page", path=page.path) }}">
         <b>{{ page.title }}</b>
       </a><br>
-      {{ page.date }} | {{ page.description }}
+      Date: {{ page.date }}
+      <br>
+      Description: {{ page.description }}
+      <br>
+      Tags: {{ page.tags|join(', ') }}
     </div>
   {% else %}
     No posts yet!
   {% endfor %}
 
 {% endblock content %}
+{{ page.tags|join(', ') }}

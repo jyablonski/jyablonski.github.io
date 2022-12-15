@@ -1,6 +1,7 @@
 title: Sample MD
 date: 2022-02-20
 description: Walkthrough
+tags: ["test", "sample"]
 
 [woaaaah](https://wordpress.com/support/markdown-quick-reference/)
 

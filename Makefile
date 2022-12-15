@@ -8,8 +8,8 @@ venv:
 	pipenv shell
 
 .PHONY: serve
-serve: 
-	python server.py
+serve:
+	@python server.py
 
 .PHONY: build
 build: 

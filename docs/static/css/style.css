@@ -125,7 +125,25 @@ body {
     display: inline-block;
     border-radius: 10px;
   }
-  
+
+  .block-tags {
+    width: auto;
+    padding: 1px 10px 1px 10px;
+    margin: auto;
+    background: #4176b72a;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  .block-selected-tag {
+    width: auto;
+    padding: 1px 10px 1px 10px;
+    margin: auto;
+    background: #3c2e8da8;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
   .block-selected a {
     color: white;
   }
@@ -244,6 +262,11 @@ body {
   }
   
   .resourceTable td, th {
+    border: 2px solid #161c22;
+    padding: 5px;
+  }
+
+  .notice td, th {
     border: 2px solid #161c22;
     padding: 5px;
   }

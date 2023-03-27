@@ -1,7 +1,7 @@
 title: My First Entry
 date: 2022-01-04
 description: Walthrough Text 1
-tags: ["test", "Chicago", "zoos"]
+tags: ["test"]
 
 xxx
 
@@ -34,5 +34,16 @@ def get_player_stats_data():
 * 2
 * 3
 
+
+*** 
+aside
+An aside can stand off less interesting text.
+***
+
+
+Strike<s>through</s> textttttt
+
+
+> my annot
 
 ** hello **

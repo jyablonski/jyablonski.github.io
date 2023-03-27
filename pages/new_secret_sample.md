@@ -15,10 +15,10 @@ tags: ["test", "sample"]
 4. Fourth item
 ##############
 
-5. hi
+1. hi
       * **mixed**
       * mixed2d
-6. hi 2
+2. hi 2
 
 > quoted text
 

@@ -43,8 +43,8 @@
             <a href="/posts/" class="left"><li class="link-list">Posts</li></a>
             <a href="/projects/" class="left"><li class="link-list">Projects</li></a>
             <a href="/resume/" class="left"><li class="link-list">Resume</li></a>
+            <a href="https://nbadashboard.jyablonski.dev" class="left"><li class="link-list">NBA Dashboard</li></a>
             <a href="https://api.jyablonski.dev" class="left"><li class="link-list">API</li></a>
-            <a href="https://graphql.jyablonski.dev" class="left"><li class="link-list">GraphQL</li></a>
           </ul>
         </div>
       </div>
@@ -54,188 +54,190 @@
         <main id="body-fade">
             
 <h2 class="post-title"><b>Projects</b></h2>
-<h4> <a href="https://jyablonski.shinyapps.io/nbadashboard/">NBA ELT Pipeline</a> </h1>
-  <p>An NBA Project with an ELT Pipeline which sources & transforms data from various feeds and transforms it into SQL Models
-     which feed into the R Shiny <br> Web Dashboard</p>
-<div class="card-row">
-  
-   <div> 
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/r.png" />
-      <p><a href="https://github.com/jyablonski/NBA-Dashboard"><strong class="project-title" style="font-size:large;">R Shiny</strong></a></p>
-      <p class="light-text">Web Dashboard</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/python.png" />
-      <p><a href="https://github.com/jyablonski/python_docker"><strong class="project-title" style="font-size:large;">Python</strong></a></p>
-      <p class="light-text">Web Scrape Script</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/dbt.png" />
-      <p><a href="https://github.com/jyablonski/nba_elt_dbt"><strong class="project-title" style="font-size:large;">dbt</strong></a></p>
-      <p class="light-text">SQL Transformations</p>
-    </div>
-  
-  </div>
-  
-  
-   <div> 
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
-      <p><a href="https://github.com/jyablonski/aws_terraform"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
-      <p class="light-text">AWS Infrastructure</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/mlflow.png" />
-      <p><a href="https://github.com/jyablonski/nba_elt_mlflow"><strong class="project-title" style="font-size:large;">ML Pipeline</strong></a></p>
-      <p class="light-text">Workflow w/ scikit-learn &amp; MLflow</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/stepfunctions.svg" />
-      <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf"><strong class="project-title" style="font-size:large;">Step Functions</strong></a></p>
-      <p class="light-text">Production Orchestration</p>
-    </div>
-  
-  </div>
-  
-  
-   <div> 
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/airflow.png" />
-      <p><a href="https://github.com/jyablonski/nba_elt_airflow"><strong class="project-title" style="font-size:large;">Airflow</strong></a></p>
-      <p class="light-text">Orchestration Proof of Concept</p>
-    </div>
-  
-  </div>
-  
-  
-</div>
-<h4> Twitch.tv Streaming </h1>
-  <p>A local-hosted Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to a Kafka Topic, and then stores it into SQL in 60s microbatches 
-    <br>to enable a BI Layer to be served in Metabase</p>
-<div class="card-row">
-  
-   <div> 
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/kafka.png" />
-      <p><a href="https://github.com/jyablonski/kafka_twitch"><strong class="project-title" style="font-size:large;">Kafka</strong></a></p>
-      <p class="light-text">Docker-Compose Setup</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/metabase.png" />
-      <p><a href="https://github.com/jyablonski/twitch_scraper"><strong class="project-title" style="font-size:large;">Metabase</strong></a></p>
-      <p class="light-text">BI Dashboard Layer hosted on Heroku</p>
-    </div>
-  
-  
-  
-    <div class="project project-1">
-      <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
-      <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/twitch.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
-      <p class="light-text">AWS Infrastructure</p>
-    </div>
-  
-  </div>
-  
-  
-</div>
-<h4> <a href="https://jyablonski_graphql.deta.dev/graphql">GraphQL API</a> </h1>
-  <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project</p>
+<h4> <a href="https://nbadashboard.jyablonski.dev">NBA ELT Pipeline</a> </h1>
+  <p>An NBA Project with multiple components including a Data Pipeline which sources & transforms data from various
+    feeds to power the R Shiny Web Dashboard</p>
   <div class="card-row">
     
      <div> 
       <div class="project project-1">
-        <img style="display:block;margin:auto;" src="/static/pictures/Projects/graphql.png" />
-        <p><a href="https://github.com/jyablonski/graphql_praq"><strong class="project-title" style="font-size:large;">GraphQL</strong></a></p>
-        <p class="light-text">API Code</p>
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/r.png" />
+        <p><a href="https://github.com/jyablonski/NBA-Dashboard"><strong class="project-title" style="font-size:large;">R Shiny</strong></a></p>
+        <p class="light-text">Web Dashboard</p>
       </div>
-    
+      
     
     
       <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/python.png" />
+        <p><a href="https://github.com/jyablonski/python_docker"><strong class="project-title" style="font-size:large;">Python</strong></a></p>
+        <p class="light-text">Ingestion Script</p>
+      </div>
+      
+    
+    
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/dbt.png" />
+        <p><a href="https://github.com/jyablonski/nba_elt_dbt"><strong class="project-title" style="font-size:large;">dbt</strong></a></p>
+        <p class="light-text">Data Transformations</p>
+      </div>
+      
+    </div>
+    
+    
+     <div> 
+      <div class="project project-1">
         <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
-        <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
+        <p><a href="https://github.com/jyablonski/aws_terraform"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
         <p class="light-text">AWS Infrastructure</p>
       </div>
+      
     
+    
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/mlflow.png" />
+        <p><a href="https://github.com/jyablonski/nba_elt_mlflow"><strong class="project-title" style="font-size:large;">ML Pipeline</strong></a></p>
+        <p class="light-text">Workflow w/ scikit-learn &amp; MLflow</p>
+      </div>
+      
+    
+    
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/stepfunctions.svg" />
+        <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf"><strong class="project-title" style="font-size:large;">Step Functions</strong></a></p>
+        <p class="light-text">Pipeline Orchestration</p>
+      </div>
+      
+    </div>
+    
+    
+     <div> 
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/airflow.png" />
+        <p><a href="https://github.com/jyablonski/nba_elt_airflow"><strong class="project-title" style="font-size:large;">Airflow</strong></a></p>
+        <p class="light-text">Pipeline Orchestration Proof of Concept</p>
+      </div>
+      
     </div>
     
     
   </div>
-  <h4> Personal Website </h1>
-    <p>A static Flask Project that's hosted in S3 and served over AWS Cloudfront</p>
+  <h4> <a href="https://api.jyablonski.dev">REST API</a> </h4>
+  <p>A Public read-only REST API Project that exposes Production Data created from the NBA ELT Pipeline Project</p>
+  <div class="card-row">
+    
+     <div> 
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/api.png" />
+        <p><a href="https://github.com/jyablonski/nba_elt_rest_api"><strong class="project-title" style="font-size:large;">REST API</strong></a></p>
+        <p class="light-text">API Code</p>
+      </div>
+      
+    
+    
+      <div class="project project-1">
+        <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
+        <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/rest_api.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
+        <p class="light-text">AWS Infrastructure</p>
+      </div>
+      
+    
+  </div>
+  <h4> Twitch.tv Streaming </h1>
+    <p>A local-hosted Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to a
+      Kafka Topic, and then stores it into SQL in 60s microbatches
+      <br>to enable a BI Layer to be served in Metabase
+    </p>
     <div class="card-row">
       
        <div> 
         <div class="project project-1">
-          <img style="display:block;margin:auto;" src="/static/pictures/Projects/flask.png" />
-          <p><a href="https://github.com/jyablonski/jyablonski.github.io"><strong class="project-title" style="font-size:large;">Server Code</strong></a></p>
-          <p class="light-text">Frozen Flask to Build Static Website</p>
+          <img style="display:block;margin:auto;" src="/static/pictures/Projects/kafka.png" />
+          <p><a href="https://github.com/jyablonski/kafka_twitch"><strong class="project-title" style="font-size:large;">Kafka</strong></a></p>
+          <p class="light-text">Docker-Compose Setup</p>
         </div>
+        
       
+      
+        <div class="project project-1">
+          <img style="display:block;margin:auto;" src="/static/pictures/Projects/metabase.png" />
+          <p><a href="https://github.com/jyablonski/twitch_scraper"><strong class="project-title" style="font-size:large;">Metabase</strong></a></p>
+          <p class="light-text">BI Dashboard Layer hosted on Heroku</p>
+        </div>
+        
       
       
         <div class="project project-1">
           <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
-          <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/website.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
+          <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/twitch.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
           <p class="light-text">AWS Infrastructure</p>
         </div>
-      
-      
-      
-        <div class="project project-1">
-          <img style="display:block;margin:auto;" src="/static/pictures/Projects/github_actions.png" />
-          <p><a href="https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml"><strong class="project-title" style="font-size:large;">GitHub Actions</strong></a></p>
-          <p class="light-text">CI CD Pipeline to Push Files to S3</p>
-        </div>
-      
+        
       </div>
       
       
     </div>
-    <h4> REST API </h1>
-      <p>A Public read-only REST API Project that exposes Production Data created from the NBA ELT Pipeline Project</p>
+    <h4> GraphQL API </h1>
+      <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project</p>
       <div class="card-row">
         
          <div> 
           <div class="project project-1">
-            <img style="display:block;margin:auto;" src="/static/pictures/Projects/api.png" />
-            <p><a href="https://github.com/jyablonski/nba_elt_rest_api"><strong class="project-title" style="font-size:large;">REST API</strong></a></p>
+            <img style="display:block;margin:auto;" src="/static/pictures/Projects/graphql.png" />
+            <p><a href="https://github.com/jyablonski/graphql_praq"><strong class="project-title" style="font-size:large;">GraphQL</strong></a></p>
             <p class="light-text">API Code</p>
           </div>
-        
+          
         
         
           <div class="project project-1">
             <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
-            <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/rest_api.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
+            <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
             <p class="light-text">AWS Infrastructure</p>
           </div>
+          
+        </div>
         
         
       </div>
+      <h4> Personal Website </h1>
+        <p>A static Flask Project that's hosted in S3 and served over AWS Cloudfront</p>
+        <div class="card-row">
+          
+           <div> 
+            <div class="project project-1">
+              <img style="display:block;margin:auto;" src="/static/pictures/Projects/flask.png" />
+              <p><a href="https://github.com/jyablonski/jyablonski.github.io"><strong class="project-title" style="font-size:large;">Server Code</strong></a></p>
+              <p class="light-text">Frozen Flask to Build Static Website</p>
+            </div>
+            
+          
+          
+            <div class="project project-1">
+              <img style="display:block;margin:auto;" src="/static/pictures/Projects/terraform.png" />
+              <p><a href="https://github.com/jyablonski/aws_terraform/blob/master/website.tf"><strong class="project-title" style="font-size:large;">Terraform</strong></a></p>
+              <p class="light-text">AWS Infrastructure</p>
+            </div>
+            
+          
+          
+            <div class="project project-1">
+              <img style="display:block;margin:auto;" src="/static/pictures/Projects/github_actions.png" />
+              <p><a href="https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml"><strong class="project-title" style="font-size:large;">GitHub Actions</strong></a></p>
+              <p class="light-text">CI CD Pipeline to Push Files to S3</p>
+            </div>
+            
+          </div>
+          
+          
+        </div>
 
-
+        
         </main>
     </div>
     <nav class="navfoot">
       <div style="text-align:center;">
-        &copy; 2022 |
+        &copy; 2023 |
         &thinsp; <a href="https://www.linkedin.com/in/jacobyablonski/" class="link-fa"><i class="fa fa-linkedin fa-lg"></i></a>
         &thinsp; <a href="https://github.com/jyablonski" class="link-fa"><i class="fa fa-github fa-lg"></i></a>
         &thinsp; <a href="mailto:jyablonski9@gmail.com" class="link-fa"><i class="fa fa-envelope fa-lg"></i></a>

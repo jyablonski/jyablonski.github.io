@@ -7,13 +7,13 @@
         "title": "R Shiny"
       },
       {
-        "description": "Web Scrape Script",
+        "description": "Ingestion Script",
         "image": "python.png",
         "link": "https://github.com/jyablonski/python_docker",
         "title": "Python"
       },
       {
-        "description": "SQL Transformations",
+        "description": "Data Transformations",
         "image": "dbt.png",
         "link": "https://github.com/jyablonski/nba_elt_dbt",
         "title": "dbt"
@@ -31,13 +31,13 @@
         "title": "ML Pipeline"
       },
       {
-        "description": "Production Orchestration",
+        "description": "Pipeline Orchestration",
         "image": "stepfunctions.svg",
         "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
         "title": "Step Functions"
       },
       {
-        "description": "Orchestration Proof of Concept",
+        "description": "Pipeline Orchestration Proof of Concept",
         "image": "airflow.png",
         "link": "https://github.com/jyablonski/nba_elt_airflow",
         "title": "Airflow"

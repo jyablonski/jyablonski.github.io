@@ -1,11 +1,11 @@
 .PHONY: build-venv
 build-venv:
-	pipenv install
+	poetry install
 
 # do this first before serve or build
 .PHONY: venv
 venv:
-	pipenv shell
+	poetry shell
 
 .PHONY: serve
 serve:

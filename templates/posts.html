@@ -30,8 +30,13 @@
     <div style="padding-bottom:3.0em;">
       <a style="color:#c8d1d9;font-size:large;" href="{{ url_for("page", path=page.path) }}">
         <b>{{ page.title }}</b>
-      </a><br>
+      </a>
+      <br>
       Date: {{ page.date }}
+      <br>
+      Tags: {% for tag in page.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
     </div>
     {% endif %}
     

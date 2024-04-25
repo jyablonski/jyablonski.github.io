@@ -7,8 +7,8 @@ build-venv:
 venv:
 	poetry shell
 
-.PHONY: serve
-serve:
+.PHONY: up
+up:
 	@python server.py
 
 .PHONY: build

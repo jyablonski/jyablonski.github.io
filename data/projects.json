@@ -1,114 +1,114 @@
 {
-    "personal": [
-      {
-        "description": "Web Dashboard",
-        "image": "r.png",
-        "link": "https://github.com/jyablonski/NBA-Dashboard",
-        "title": "R Shiny"
-      },
-      {
-        "description": "Ingestion Script",
-        "image": "python.png",
-        "link": "https://github.com/jyablonski/python_docker",
-        "title": "Python"
-      },
-      {
-        "description": "Data Transformations",
-        "image": "dbt.png",
-        "link": "https://github.com/jyablonski/nba_elt_dbt",
-        "title": "dbt"
-      },
-      {
-        "description": "AWS Infrastructure",
-        "image": "terraform.png",
-        "link": "https://github.com/jyablonski/aws_terraform",
-        "title": "Terraform"
-      },
-      {
-        "description": "Workflow w/ scikit-learn & MLflow",
-        "image": "mlflow.png",
-        "link": "https://github.com/jyablonski/nba_elt_mlflow",
-        "title": "ML Pipeline"
-      },
-      {
-        "description": "Pipeline Orchestration",
-        "image": "stepfunctions.svg",
-        "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
-        "title": "Step Functions"
-      },
-      {
-        "description": "Pipeline Orchestration Proof of Concept",
-        "image": "airflow.png",
-        "link": "https://github.com/jyablonski/nba_elt_airflow",
-        "title": "Airflow"
-      }
-    ],
-    "twitch_kafka": [
-      {
-        "description": "Docker-Compose Setup",
-        "image": "kafka.png",
-        "link": "https://github.com/jyablonski/kafka_twitch",
-        "title": "Kafka"
-      },
-      {
-        "description": "BI Dashboard Layer hosted on Heroku",
-        "image": "metabase.png",
-        "link": "https://github.com/jyablonski/twitch_scraper",
-        "title": "Metabase"
-      },
-      {
-        "description": "AWS Infrastructure",
-        "image": "terraform.png",
-        "link": "https://github.com/jyablonski/aws_terraform/blob/master/twitch.tf",
-        "title": "Terraform"
-      }
-    ],
-    "graphql": [
-      {
-        "description": "API Code",
-        "image": "graphql.png",
-        "link": "https://github.com/jyablonski/graphql_praq",
-        "title": "GraphQL"
-      },
-      {
-        "description": "AWS Infrastructure",
-        "image": "terraform.png",
-        "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
-        "title": "Terraform"
-      }
-    ],
-    "rest_api": [
-      {
-        "description": "API Code",
-        "image": "api.png",
-        "link": "https://github.com/jyablonski/nba_elt_rest_api",
-        "title": "REST API"
-      },
-      {
-        "description": "AWS Infrastructure",
-        "image": "terraform.png",
-        "link": "https://github.com/jyablonski/aws_terraform/blob/master/rest_api.tf",
-        "title": "Terraform"
-      }
-    ],
-    "website": [
-      {
-        "description": "Frozen Flask to Build Static Website",
-        "image": "flask.png",
-        "link": "https://github.com/jyablonski/jyablonski.github.io",
-        "title": "Server Code"
-      },
-      {
-        "description": "AWS Infrastructure",
-        "image": "terraform.png",
-        "link": "https://github.com/jyablonski/aws_terraform/blob/master/website.tf",
-        "title": "Terraform"
-      },
-      {
-        "description": "CI CD Pipeline to Push Files to S3",
-        "image": "github_actions.png",
-        "link": "https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml",
-        "title": "GitHub Actions"
-      }
-    ]
+  "personal": [
+    {
+      "description": "Web Dashboard",
+      "image": "dash.png",
+      "link": "https://github.com/jyablonski/nba_elt_dashboard",
+      "title": "Frontend"
+    },
+    {
+      "description": "Ingestion Script",
+      "image": "python.png",
+      "link": "https://github.com/jyablonski/nba_elt_ingestion",
+      "title": "Python"
+    },
+    {
+      "description": "Data Transformations",
+      "image": "dbt.png",
+      "link": "https://github.com/jyablonski/nba_elt_dbt",
+      "title": "dbt"
+    },
+    {
+      "description": "AWS Infrastructure",
+      "image": "terraform.png",
+      "link": "https://github.com/jyablonski/aws_terraform",
+      "title": "Terraform"
+    },
+    {
+      "description": "Workflow to create Win Predictions",
+      "image": "scikit-learn.png",
+      "link": "https://github.com/jyablonski/nba_elt_mlflow",
+      "title": "ML Pipeline"
+    },
+    {
+      "description": "Pipeline Orchestration",
+      "image": "stepfunctions.svg",
+      "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
+      "title": "Step Functions"
+    },
+    {
+      "description": "Pipeline Orchestration (Proof of Concept)",
+      "image": "airflow.png",
+      "link": "https://github.com/jyablonski/nba_elt_airflow",
+      "title": "Airflow"
+    }
+  ],
+  "rest_api": [
+    {
+      "description": "API Code",
+      "image": "api.png",
+      "link": "https://github.com/jyablonski/nba_elt_rest_api",
+      "title": "REST API"
+    },
+    {
+      "description": "AWS Infrastructure",
+      "image": "terraform.png",
+      "link": "https://github.com/jyablonski/aws_terraform/blob/master/rest_api.tf",
+      "title": "Terraform"
+    }
+  ],
+  "website": [
+    {
+      "description": "Frozen Flask to Build Static Website",
+      "image": "flask.png",
+      "link": "https://github.com/jyablonski/jyablonski.github.io",
+      "title": "Server Code"
+    },
+    {
+      "description": "AWS Infrastructure",
+      "image": "terraform.png",
+      "link": "https://github.com/jyablonski/aws_terraform/blob/master/website.tf",
+      "title": "Terraform"
+    },
+    {
+      "description": "Deploy Pipeline to Push Files to S3",
+      "image": "github_actions.png",
+      "link": "https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml",
+      "title": "GitHub Actions"
+    }
+  ],
+  "graphql": [
+    {
+      "description": "API Code",
+      "image": "graphql.png",
+      "link": "https://github.com/jyablonski/graphql_praq",
+      "title": "GraphQL"
+    },
+    {
+      "description": "AWS Infrastructure",
+      "image": "terraform.png",
+      "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
+      "title": "Terraform"
+    }
+  ],
+  "twitch_kafka": [
+    {
+      "description": "Docker-Compose Setup",
+      "image": "kafka.png",
+      "link": "https://github.com/jyablonski/kafka_twitch",
+      "title": "Kafka"
+    },
+    {
+      "description": "BI Dashboard Layer hosted on Heroku",
+      "image": "metabase.png",
+      "link": "https://github.com/jyablonski/twitch_scraper",
+      "title": "Metabase"
+    },
+    {
+      "description": "AWS Infrastructure",
+      "image": "terraform.png",
+      "link": "https://github.com/jyablonski/aws_terraform/blob/master/twitch.tf",
+      "title": "Terraform"
+    }
+  ]
 }

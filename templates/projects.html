@@ -3,13 +3,14 @@
 {% block content %}
 <h2 class="post-title"><b>Projects</b></h2>
 <h4> <a href="https://nbadashboard.jyablonski.dev">NBA ELT Pipeline</a> </h1>
-  <p>An NBA Project with multiple components including a Data Pipeline which sources & transforms data from various
-    feeds to power the R Shiny Web Dashboard</p>
+  <p>An NBA Project with multiple components such as a Data Pipeline, a REST API, and a Frontend Dashboard to
+    present various metrics, insights, and fan sentiment on the current NBA Season
+  </p>
   <div class="card-row">
     {% for project in projects.personal %}
     {% if loop.index % 3 == 1 %} <div> {% endif %}
       <div class="project project-1">
-        <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+        <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
         <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
               }}</strong></a></p>
         <p class="light-text">{{ project.description }}</p>
@@ -21,12 +22,13 @@
     {% endfor %}
   </div>
   <h4> <a href="https://api.jyablonski.dev">REST API</a> </h4>
-  <p>A Public read-only REST API Project that exposes Production Data created from the NBA ELT Pipeline Project</p>
+  <p>A REST API Project written w/ FastAPI & hosted over an AWS Lambda Function URL that publicly exposes Data created
+     from the NBA ELT Pipeline Project</p>
   <div class="card-row">
     {% for project in projects.rest_api %}
     {% if loop.index % 3 == 1 %} <div> {% endif %}
       <div class="project project-1">
-        <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+        <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
         <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
               }}</strong></a></p>
         <p class="light-text">{{ project.description }}</p>
@@ -37,33 +39,30 @@
     {% endif %}
     {% endfor %}
   </div>
-  <h4> Twitch.tv Streaming </h1>
-    <p>A local-hosted Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to a
-      Kafka Topic, and then stores it into SQL in 60s microbatches
-      <br>to enable a BI Layer to be served in Metabase
-    </p>
+  <h4> Personal Website </h1>
+    <p>A static Web App that's hosted in S3 and served over AWS Cloudfront</p>
     <div class="card-row">
-      {% for project in projects.twitch_kafka %}
+      {% for project in projects.website %}
       {% if loop.index % 3 == 1 %} <div> {% endif %}
         <div class="project project-1">
-          <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+          <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
           <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
                 }}</strong></a></p>
           <p class="light-text">{{ project.description }}</p>
         </div>
         {% if (loop.index % 3 == 0) or
-        (loop.index == projects.twitch_kafka|length) %}
+        (loop.index == projects.website|length) %}
       </div>
       {% endif %}
       {% endfor %}
     </div>
-    <h4> GraphQL API </h1>
+    <h4> GraphQL API (Deprecrated)</h1>
       <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project</p>
       <div class="card-row">
         {% for project in projects.graphql %}
         {% if loop.index % 3 == 1 %} <div> {% endif %}
           <div class="project project-1">
-            <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+            <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
             <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
                   }}</strong></a></p>
             <p class="light-text">{{ project.description }}</p>
@@ -74,22 +73,25 @@
         {% endif %}
         {% endfor %}
       </div>
-      <h4> Personal Website </h1>
-        <p>A static Flask Project that's hosted in S3 and served over AWS Cloudfront</p>
+      <h4> Twitch.tv Streaming </h1>
+        <p>A local-hosted Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to
+          a
+          Kafka Topic, and then stores it into SQL in 60s microbatches
+          <br>to enable a BI Layer to be served in Metabase
+        </p>
         <div class="card-row">
-          {% for project in projects.website %}
+          {% for project in projects.twitch_kafka %}
           {% if loop.index % 3 == 1 %} <div> {% endif %}
             <div class="project project-1">
-              <img style="display:block;margin:auto;" src="/static/pictures/Projects/{{ project.image }}" />
+              <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
               <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
                     }}</strong></a></p>
               <p class="light-text">{{ project.description }}</p>
             </div>
             {% if (loop.index % 3 == 0) or
-            (loop.index == projects.website|length) %}
+            (loop.index == projects.twitch_kafka|length) %}
           </div>
           {% endif %}
           {% endfor %}
         </div>
-
         {% endblock content %}

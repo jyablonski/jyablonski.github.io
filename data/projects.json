@@ -71,7 +71,7 @@
       "title": "Terraform"
     },
     {
-      "description": "Deploy Pipeline to Push Files to S3",
+      "description": "Deploy Pipeline to Push Static Files to S3",
       "image": "github_actions.png",
       "link": "https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml",
       "title": "GitHub Actions"

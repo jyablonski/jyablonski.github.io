@@ -43,8 +43,6 @@
             <a href="/posts/" class="left"><li class="link-list">Posts</li></a>
             <a href="/projects/" class="left"><li class="link-list">Projects</li></a>
             <a href="/resume/" class="left"><li class="link-list">Resume</li></a>
-            <a href="https://nbadashboard.jyablonski.dev" class="left"><li class="link-list">NBA Dashboard</li></a>
-            <a href="https://api.jyablonski.dev" class="left"><li class="link-list">NBA REST API</li></a>
           </ul>
         </div>
       </div>
@@ -125,7 +123,7 @@
   </div>
   <h4> <a href="https://api.jyablonski.dev">REST API</a> </h4>
   <p>A REST API Project written w/ FastAPI & hosted over an AWS Lambda Function URL that publicly exposes Data created
-     from the NBA ELT Pipeline Project</p>
+    from the NBA ELT Pipeline Project</p>
   <div class="card-row">
     
      <div> 
@@ -146,7 +144,8 @@
     
   </div>
   <h4> Personal Website </h1>
-    <p>A static Web App that's hosted in S3 and served over AWS Cloudfront</p>
+    <p>A static Web App that's hosted on S3, served over HTTPS using AWS Cloudfront, and connected to a custom domain
+       (<a href="https://jyablonski.dev">https://jyablonski.dev</a>) via Route 53 for DNS management.</p>
     <div class="card-row">
       
        <div> 
@@ -177,7 +176,9 @@
       
     </div>
     <h4> GraphQL API (Deprecated)</h1>
-      <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project</p>
+      <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project.
+        <br> This project was deprecated in August 2022 and has been replaced by the REST API.
+      </p>
       <div class="card-row">
         
          <div> 
@@ -200,10 +201,9 @@
         
       </div>
       <h4> Twitch.tv Streaming </h1>
-        <p>A local-hosted Kafka Project which continuously sources data from the live-feed Twitch Helix API, sends it to
-          a
-          Kafka Topic, and then stores it into SQL in 60s microbatches
-          <br>to enable a BI Layer to be served in Metabase
+        <p>A local-hosted Kafka Project via docker compose to simulate a real time streaming data solution. It continuously streams 
+          live twitch streamer + viewership data from the live-feed Twitch Helix API, sends it to a Kafka Topic, and then stores it
+          into SQL every 60 seconds in microbatches to enable a BI Layer hosted in Metabase.
         </p>
         <div class="card-row">
           

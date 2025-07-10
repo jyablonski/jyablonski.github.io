@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h3 class="post-title"><b>Posts (Not currently used)</b></h3>
+  <h3 class="post-title"><b>Posts</b></h3>
 
   Topics: 
   {% if tag == 'all' %}
@@ -34,9 +34,10 @@
       <br>
       Date: {{ page.date }}
       <br>
-      Tags: {% for tag in page.tags %}
-              <span>{{ tag }}</span>
-            {% endfor %}
+      Tags: 
+      {% for tag in page.tags %}
+        <span>{{ tag }}{% if not loop.last %}, {% endif %}</span>
+      {% endfor %}
     </div>
     {% endif %}
     

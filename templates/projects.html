@@ -57,6 +57,24 @@
       {% endif %}
       {% endfor %}
     </div>
+    <h4> <a href="https://doqs.jyablonski.dev">Doqs</a> </h4>
+    <p>An internal documentation site for the NBA ELT Project, written in Astro Starlight</p>
+      <div class="card-row">
+        {% for project in projects.doqs %}
+        {% if loop.index % 3 == 1 %} <div> {% endif %}
+          <div class="project project-1">
+            <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
+            <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
+                  }}</strong></a></p>
+            <p class="light-text">{{ project.description }}</p>
+          </div>
+          {% if (loop.index % 3 == 0) or
+          (loop.index == projects.doqs|length) %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+
     <h4> GraphQL API (Deprecated)</h1>
       <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project.
         <br> This project was deprecated in August 2022 and has been replaced by the REST API.
@@ -76,7 +94,7 @@
         {% endif %}
         {% endfor %}
       </div>
-      <h4> Twitch.tv Streaming </h1>
+      <h4> Twitch.tv Streaming (Deprecated)</h1>
         <p>A local-hosted Kafka Project via docker compose to simulate a real time streaming data solution. It continuously streams 
           live twitch streamer + viewership data from the live-feed Twitch Helix API, sends it to a Kafka Topic, and then stores it
           into SQL every 60 seconds in microbatches to enable a BI Layer hosted in Metabase.

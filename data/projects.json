@@ -57,6 +57,14 @@
       "title": "Terraform"
     }
   ],
+  "doqs": [
+    {
+      "description": "",
+      "image": "starlightv2.png",
+      "link": "https://doqs.jyablonski.dev",
+      "title": "Server Code"
+    }
+  ],
   "website": [
     {
       "description": "Frozen Flask to Build Static Website",

@@ -76,9 +76,9 @@
     </div>
     <h4> Lotus (Work in Progress)</h4>
     <p>
-      A full-stack journaling application built with Go, Python, and Next.js. It features a modern frontend UI, a
-      backend API, and a text analyzer service. Users can log their daily thoughts and track their mood, with the option
-      to enable AI-powered analysis for personalized insights and recommendations.
+      A (currently local-hosted) full-stack journaling application built with Go, Python, and Next.js. It features a
+      modern frontend UI, a backend gRPC Server, and a text analyzer service. Users can log their daily thoughts and
+      track their mood, with the option to enable AI-powered analysis for personalized insights and recommendations.
     </p>
     <div class="card-row">
       {% for project in projects.lotus %}
@@ -95,7 +95,7 @@
       {% endfor %}
     </div>
     <h4> GraphQL API (Deprecated)</h1>
-      <p>A Public read-only GraphQL API that exposes Production Data created from the NBA ELT Pipeline Project.
+      <p>A Public read-only GraphQL API that exposed Production Data created from the NBA ELT Pipeline Project.
         <br> This project was deprecated in August 2022 and has been replaced by the REST API.
       </p>
       <div class="card-row">
@@ -114,10 +114,10 @@
         {% endfor %}
       </div>
       <h4> Twitch.tv Streaming (Deprecated)</h1>
-        <p>A local-hosted Kafka Project via docker compose to simulate a real time streaming data solution. It
-          continuously streams
-          live twitch streamer + viewership data from the live-feed Twitch Helix API, sends it to a Kafka Topic, and
-          then stores it
+        <p>A local-hosted Kafka Project via docker compose that simulated a real time streaming data solution. It
+          continuously streamed
+          live viewership data from the Twitch Helix API, sent it to a Kafka Topic, and
+          then stored it
           into SQL every 60 seconds in microbatches to enable a BI Layer hosted in Metabase.
         </p>
         <div class="card-row">

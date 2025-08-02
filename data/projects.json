@@ -35,12 +35,6 @@
       "image": "stepfunctions.svg",
       "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
       "title": "Step Functions"
-    },
-    {
-      "description": "Pipeline Orchestration (Proof of Concept)",
-      "image": "airflow.png",
-      "link": "https://github.com/jyablonski/nba_elt_airflow",
-      "title": "Airflow"
     }
   ],
   "rest_api": [
@@ -61,7 +55,7 @@
     {
       "description": "",
       "image": "starlightv2.png",
-      "link": "https://doqs.jyablonski.dev",
+      "link": "https://github.com/jyablonski/doqs",
       "title": "Server Code"
     }
   ],
@@ -99,12 +93,32 @@
       "title": "Terraform"
     }
   ],
+  "lotus": [
+    {
+      "description": "Backend Service",
+      "image": "go.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/backend",
+      "title": "gRPC Server Code"
+    },
+    {
+      "description": "Frontend Application",
+      "image": "nextjs.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/frontend",
+      "title": "UI Code"
+    },
+    {
+      "description": "Text Analyzer Service",
+      "image": "python.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/analyzer",
+      "title": "Python Code"
+    }
+  ],
   "twitch_kafka": [
     {
       "description": "Docker-Compose Setup",
       "image": "kafka.png",
       "link": "https://github.com/jyablonski/kafka_twitch",
-      "title": "Kafka"
+      "title": "Project Code"
     },
     {
       "description": "BI Dashboard Layer hosted on Heroku",

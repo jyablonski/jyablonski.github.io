@@ -35,12 +35,6 @@
       "image": "stepfunctions.svg",
       "link": "https://github.com/jyablonski/aws_terraform/blob/master/step_functions.tf",
       "title": "Step Functions"
-    },
-    {
-      "description": "Pipeline Orchestration (Proof of Concept)",
-      "image": "airflow.png",
-      "link": "https://github.com/jyablonski/nba_elt_airflow",
-      "title": "Airflow"
     }
   ],
   "rest_api": [
@@ -61,7 +55,7 @@
     {
       "description": "",
       "image": "starlightv2.png",
-      "link": "https://doqs.jyablonski.dev",
+      "link": "https://github.com/jyablonski/doqs",
       "title": "Server Code"
     }
   ],
@@ -97,6 +91,26 @@
       "image": "terraform.png",
       "link": "https://github.com/jyablonski/aws_terraform/blob/master/graphql_agent.tf",
       "title": "Terraform"
+    }
+  ],
+  "lotus": [
+    {
+      "description": "Backend",
+      "image": "go.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/backend",
+      "title": "gRPC Server Code"
+    },
+    {
+      "description": "Frontend",
+      "image": "nextjs.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/frontend",
+      "title": "UI Code"
+    },
+    {
+      "description": "Text Analyzer",
+      "image": "python.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/analyzer",
+      "title": "Python Code"
     }
   ],
   "twitch_kafka": [

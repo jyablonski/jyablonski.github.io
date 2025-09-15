@@ -113,6 +113,14 @@
       "title": "Python Code"
     }
   ],
+  "homelab": [
+    {
+      "description": "Cluster Infrastructure",
+      "image": "k3s.png",
+      "link": "https://github.com/jyablonski/homelab",
+      "title": "Kubernetes"
+    }
+  ],
   "twitch_kafka": [
     {
       "description": "Docker-Compose Setup",

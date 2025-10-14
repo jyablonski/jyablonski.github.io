@@ -79,6 +79,14 @@
       "title": "GitHub Actions"
     }
   ],
+  "goarctis": [
+    {
+      "description": "Linux System Tray App",
+      "image": "go.png",
+      "link": "https://github.com/jyablonski/goarctis",
+      "title": "goarctis"
+    }
+  ],
   "graphql": [
     {
       "description": "API Code",

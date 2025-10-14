@@ -113,6 +113,24 @@
       {% endif %}
       {% endfor %}
     </div>
+    <h4>goarctis</h4>
+    <p>
+      Linux System Tray Application for managing and monitoring SteelSeries Arctis GameBuds, which don't have official support on Linux.
+    </p>
+    <div class="card-row">
+      {% for project in projects.goarctis %}
+      {% if loop.index % 3 == 1 %} <div> {% endif %}
+        <div class="project project-1">
+          <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
+          <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
+                }}</strong></a></p>
+          <p class="light-text">{{ project.description }}</p>
+        </div>
+        {% if (loop.index % 3 == 0) or (loop.index == projects.goarctis|length) %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
     <h4> GraphQL API (Deprecated)</h1>
       <p>A Public read-only GraphQL API that exposed Production Data created from the NBA ELT Pipeline Project.
         <br> This project was deprecated in August 2022 and has been replaced by the REST API.

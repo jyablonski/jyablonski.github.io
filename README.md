@@ -1,8 +1,10 @@
-# jyablonski.github.io
+# Website
 
 Personal website built with Flask and Frozen-Flask.
 
 **Live site:** https://jyablonski.dev
+
+Version: 0.4.11
 
 ## Quick Start
 

@@ -18,20 +18,25 @@ app.config.from_object(__name__)
 app.config["FREEZER_DESTINATION"] = "docs"
 pages = FlatPages(app)
 freezer = Freezer(app)  # Creates a frozen object of the flask app
-markdown_manager = Markdown(app, extensions=["fenced_code"], output_format="html5",)
+markdown_manager = Markdown(
+    app,
+    extensions=["fenced_code"],
+    output_format="html5",
+)
 
 posts = [page for page in list(pages) if not page.path.startswith("r/")]
 
 # create tags
 post_tags = {}
 for page in list(posts):
-    for tag in page.meta['tags']:
+    for tag in page.meta["tags"]:
         if tag not in post_tags:
             post_tags[tag] = 0
         post_tags[tag] += 1
 
-# sort the tags 
-post_tags = dict(sorted(post_tags.items(), key=lambda x:x[1], reverse=True))
+# sort the tags
+post_tags = dict(sorted(post_tags.items(), key=lambda x: x[1], reverse=True))
+
 
 # URL Routing - Home Page
 @app.route("/")
@@ -42,6 +47,7 @@ def index():
 @app.route("/posts/")
 def posts():
     return render_template("posts.html", pages=pages, tags=post_tags, tag="all")
+
 
 @app.route("/posts/<string:tag>/")
 def posts_tag(tag):

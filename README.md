@@ -2,7 +2,7 @@
 
 Personal website built with Flask and Frozen-Flask.
 
-**Live site:** https://jyablonski.github.io/
+**Live site:** https://jyablonski.dev
 
 ## Quick Start
 

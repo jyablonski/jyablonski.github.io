@@ -1,27 +1,40 @@
-[tool.poetry]
+[project]
 name = "jyablonski-github-io"
 version = "0.4.0"
 description = "jyablonski Website"
-authors = ["jyablonski9 <jyablonski9@gmail.com>"]
+authors = [{ name = "jyablonski9", email = "jyablonski9@gmail.com" }]
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.13, <3.14"
+dependencies = [
+    "flask>=2.3.3,<3",
+    "flask-flatpages>=0.8.2",
+    "frozen-flask>=1.0.1",
+    "flask-markdown>=0.3",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-flask = "2.3.3"
-flask-flatpages = "^0.8.2"
-frozen-flask = "^1.0.1"
-flask-markdown = "^0.3"
+[project.optional-dependencies]
+dev = []
 
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.10",
+]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short --cov --cov-report=term-missing"
+filterwarnings = [
+    "ignore::DeprecationWarning:flaskext.*:",
+    "ignore::DeprecationWarning:flask_flatpages.*:",
+]
 
-[tool.poetry.group.dev.dependencies]
-black = "^23.12.1"
-ruff = "^0.1.13"
-ipykernel = "^6.28.0"
-mypy = "^1.8.0"
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", ".venv/*"]
 
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "if __name__ == .__main__.:"]
+show_missing = true

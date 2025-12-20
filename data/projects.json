@@ -75,7 +75,7 @@
     {
       "description": "Deploy Pipeline to Push Static Files to S3",
       "image": "github_actions.png",
-      "link": "https://github.com/jyablonski/jyablonski.github.io/blob/master/.github/workflows/deploy.yml",
+      "link": "https://github.com/jyablonski/jyablonski.github.io/blob/main/.github/workflows/ci_cd.yaml",
       "title": "GitHub Actions"
     }
   ],
@@ -103,7 +103,7 @@
   ],
   "lotus": [
     {
-      "description": "Backend Service",
+      "description": "Core Backend Service",
       "image": "go.png",
       "link": "https://github.com/jyablonski/lotus/tree/main/services/backend",
       "title": "gRPC Server Code"
@@ -115,10 +115,16 @@
       "title": "UI Code"
     },
     {
-      "description": "Text Analyzer Service",
+      "description": "Journal Analyzer Service",
       "image": "python.png",
       "link": "https://github.com/jyablonski/lotus/tree/main/services/analyzer",
       "title": "Python Code"
+    },
+    {
+      "description": "Pipeline Orchestration",
+      "image": "dagster.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/dagster",
+      "title": "Dagster"
     }
   ],
   "homelab": [

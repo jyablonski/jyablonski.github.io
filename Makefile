@@ -1,43 +1,41 @@
-.PHONY: build-venv
-build-venv:
-	poetry install
-
-# do this first before serve or build
-.PHONY: venv
-venv:
-	poetry shell
+.PHONY: install
+install:
+	uv sync --group dev
 
 .PHONY: up
 up:
-	@python server.py
+	uv run python server.py
 
 .PHONY: build
-build: 
-	python server.py build
+build:
+	uv run python server.py build
+
+.PHONY: test
+test:
+	uv run pytest
+
+.PHONY: lint
+lint:
+	uv run ruff check .
+
+.PHONY: lint-fix
+lint-fix:
+	uv run ruff check . --fix
 
 .PHONY: bump-patch
 bump-patch:
 	@bump2version patch
-	@python server.py build
-	@git add .
-	@git commit -m "updating package"
 	@git push --tags
 	@git push
 
 .PHONY: bump-minor
 bump-minor:
 	@bump2version minor
-	@python server.py build
-	@git add .
-	@git commit -m "updating package"
 	@git push --tags
 	@git push
 
 .PHONY: bump-major
 bump-major:
 	@bump2version major
-	@python server.py build
-	@git add .
-	@git commit -m "updating package"
 	@git push --tags
 	@git push

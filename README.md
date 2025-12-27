@@ -4,7 +4,7 @@ Personal website built with Flask and Frozen-Flask.
 
 **Live site:** https://jyablonski.dev
 
-Version: 0.4.12
+Version: 0.4.13
 
 ## Quick Start
 

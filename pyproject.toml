@@ -25,7 +25,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --tb=short --cov --cov-report=term-missing"
+addopts = "-v --tb=short --cov --cov-report=term-missing --color=yes"
 filterwarnings = [
     "ignore::DeprecationWarning:flaskext.*:",
     "ignore::DeprecationWarning:flask_flatpages.*:",

@@ -125,6 +125,12 @@
       "image": "dagster.png",
       "link": "https://github.com/jyablonski/lotus/tree/main/services/dagster",
       "title": "Dagster"
+    },
+    {
+      "description": "Admin & Schema Migration Tool",
+      "image": "django.png",
+      "link": "https://github.com/jyablonski/lotus/tree/main/services/django",
+      "title": "Django"
     }
   ],
   "homelab": [
@@ -133,6 +139,14 @@
       "image": "k3s.png",
       "link": "https://github.com/jyablonski/homelab",
       "title": "Kubernetes"
+    }
+  ],
+  "arc": [
+    {
+      "description": "Application Code",
+      "image": "go.png",
+      "link": "",
+      "title": "arc"
     }
   ],
   "twitch_kafka": [

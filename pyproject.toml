@@ -22,6 +22,9 @@ dev = [
     "pytest-cov>=7.0.0",
     "ruff>=0.14.10",
 ]
+local = [
+    "bump2version>=1.0.1",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

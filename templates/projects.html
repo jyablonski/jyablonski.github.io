@@ -111,6 +111,24 @@
       {% endif %}
       {% endfor %}
     </div>
+    <h4> <a href="https://github.com/jyablonski/arc">arc</a> </h4>
+    <p>
+      CLI Tool for Linux Maintenance and Operations written in Go. Features include system updates, aws key rotation, admin tasks, and more.
+    </p>
+    <div class="card-row">
+      {% for project in projects.arc %}
+      {% if loop.index % 3 == 1 %} <div> {% endif %}
+        <div class="project project-1">
+          <img style="display:block;margin:auto;" src="/static/pictures/projects/{{ project.image }}" />
+          <p><a href="{{ project.link }}"><strong class="project-title" style="font-size:large;">{{ project.title
+                }}</strong></a></p>
+          <p class="light-text">{{ project.description }}</p>
+        </div>
+        {% if (loop.index % 3 == 0) or (loop.index == projects.arc|length) %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
     <h4> <a href="https://github.com/jyablonski/goarctis">goarctis</a> </h4>
     <p>
       Linux System Tray Application written in Go for monitoring Wireless device battery levels to fill the gap left by proprietary software that lacks Linux support.
